@@ -1,6 +1,6 @@
 # Django settings for TwitApp project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -11,8 +11,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'C:/Users/sg0220017/Desktop/tai/twitdb',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -23,7 +23,7 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -98,6 +98,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'TwitApp.middle.SocialAuthCustomMiddle',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -122,6 +123,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'twitai',
+    'social.apps.django_app.default',
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -154,3 +156,34 @@ LOGGING = {
         },
     }
 }
+
+AUTHENTICATION_BACKENDS = (
+    #'social.backends.open_id.OpenIdAuth',
+    'social.backends.twitter.TwitterOAuth',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'social.apps.django_app.context_processors.backends',
+    'social.apps.django_app.context_processors.login_redirect',
+    'django.contrib.auth.context_processors.auth',
+)
+
+SOCIAL_AUTH_TWITTER_KEY = '9I8LC9qDRU2L8iwIoZ7g'
+SOCIAL_AUTH_TWITTER_SECRET = '9CwAdc99IOu4eT4eIN2BnjwHscJufZlIjNiX6SiImn8'
+
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/tai/login-success'
+SOCIAL_AUTH_LOGIN_ERROR_URL = '/tai/login-error'
+SOCIAL_AUTH_LOGIN_URL = '/tai/login-error'
+
+#Unused urls
+#LOGIN_ERROR_URL = '/tai/login-error'
+#LOGIN_URL = '/tai/login-error'
+#SOCIAL_AUTH_BACKEND_ERROR_URL = '/tai/login-error'
+#SOCIAL_AUTH_TWITTER_ERROR_URL = '/tai/login-error'
+#SOCIAL_AUTH_TWITTEROAUTH_ERROR_URL = '/tai/login-error'
+#SOCIAL_AUTH_OAUTH_ERROR_URL = '/tai/login-error'
+
+# False by default:
+#SOCIAL_AUTH_RAISE_EXCEPTIONS = False
+#RAISE_EXCEPTIONS = False

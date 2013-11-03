@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign in</title>
+</head>
+<body>
+<a href="{% url 'social:begin' "twitter" %}">Twitter OAuth</a><br />
+{% if message %}
+    <h4>{{ message }}</h4>
+{% endif %}
+<form action="{% url 'twitai:login' %}" method="post">
+    {% csrf_token %}
+    Login: {{ form.login }} <br>
+    Password: {{ form.password }}
+    <input type="submit" value="Sign in"/>
+</form>
+</body>
+</html>
