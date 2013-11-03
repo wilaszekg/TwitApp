@@ -7,8 +7,8 @@ TwitApp
 2. Django
 
 ### Required applications
-1. Python Social Auth [https://github.com/omab/python-social-auth]
---* Install with pip: pip install python-social-auth
+1. Python Social Auth: https://github.com/omab/python-social-auth
+⋅⋅* Install with pip: pip install python-social-auth
 
 ### Settings
 1. **DATABASES.default.NAME** has to be change to point absoulte sqlite db file in your system. If you want to use another DB, you also have to set other DATABASE settings.
