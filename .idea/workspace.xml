@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbadcda3-8bc2-458d-9b70-b6f175a0d51b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twitai/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TwitApp/middle.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twitai/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitApp/settings.py" afterPath="$PROJECT_DIR$/TwitApp/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TwitApp/urls.py" afterPath="$PROJECT_DIR$/TwitApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/twitai/views.py" afterPath="$PROJECT_DIR$/twitai/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="TwitApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +28,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TwitApp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="79" max-vertical-offset="510">
+            <state line="24" column="0" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -45,7 +37,7 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="33" selection-start="373" selection-end="373" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="391">
+            <state line="14" column="33" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="391">
               <folding />
             </state>
           </provider>
@@ -54,7 +46,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitai/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="1" selection-start="328" selection-end="328" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="238">
+            <state line="9" column="1" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
@@ -63,10 +55,8 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/twitai/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="24" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-              <folding>
-                <element signature="e#26#71#0" expanded="true" />
-              </folding>
+            <state line="26" column="17" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="731">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +64,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TwitApp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.052227344" vertical-offset="0" max-vertical-offset="3298">
+            <state line="8" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.15668203" vertical-offset="34" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -83,10 +73,8 @@
       <file leaf-file-name="middleware.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/social/apps/django_app/middleware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="17" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="935">
-              <folding>
-                <element signature="e#24#34#0" expanded="true" />
-              </folding>
+            <state line="45" column="17" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="935">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,7 +82,7 @@
       <file leaf-file-name="oauth.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://C:/Python27/Lib/site-packages/social/backends/oauth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="3876" selection-end="3876" vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="6443">
+            <state line="107" column="0" selection-start="3876" selection-end="3876" vertical-scroll-proportion="0.0" vertical-offset="1819" max-vertical-offset="6630">
               <folding />
             </state>
           </provider>
@@ -161,6 +149,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,20 +212,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/cmd/git.exe" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -289,22 +277,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TwitApp" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,6 +297,22 @@
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TwitApp" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -363,27 +351,7 @@
       <option name="CONFIGURATION_FILE" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TwitApp" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -409,7 +377,27 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TwitApp" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -514,18 +502,24 @@
       <created>1383390729455</created>
       <updated>1383390729455</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added gitignore">
+      <created>1383515949433</created>
+      <updated>1383515949433</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-264" width="1296" height="1040" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21857305" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26904377" sideWeight="0.78142697" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.273906" sideWeight="0.78142697" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3533409" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -547,6 +541,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Added gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -559,51 +555,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/twitai/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
+        <state line="6" column="26" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.33243242" vertical-offset="1577" max-vertical-offset="4556">
-          <folding />
-        </state>
+        <state line="114" column="0" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.33243242" vertical-offset="1577" max-vertical-offset="4556" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/social/strategies/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="2189" selection-end="2189" vertical-scroll-proportion="0.0" vertical-offset="939" max-vertical-offset="4590">
-          <folding />
-        </state>
+        <state line="68" column="0" selection-start="2189" selection-end="2189" vertical-scroll-proportion="0.0" vertical-offset="939" max-vertical-offset="4590" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/social/actions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="2057">
-          <folding />
-        </state>
+        <state line="53" column="0" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.0" vertical-offset="769" max-vertical-offset="2057" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/social/apps/django_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="1054">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="1054" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/social/apps/django_app/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="782">
-          <folding />
-        </state>
+        <state line="31" column="0" selection-start="1149" selection-end="1149" vertical-scroll-proportion="0.0" vertical-offset="327" max-vertical-offset="782" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/django/views/decorators/csrf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2684" selection-end="2684" vertical-scroll-proportion="0.48135594" vertical-offset="1082" max-vertical-offset="1377">
-          <folding />
-        </state>
+        <state line="76" column="0" selection-start="2684" selection-end="2684" vertical-scroll-proportion="0.48135594" vertical-offset="1082" max-vertical-offset="1377" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/social/backends/oauth.py">
@@ -615,37 +597,33 @@
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/six.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="4" selection-start="1664" selection-end="1664" vertical-scroll-proportion="-4.7252126" vertical-offset="2416" max-vertical-offset="9877">
-          <folding />
-        </state>
+        <state line="46" column="4" selection-start="1664" selection-end="1664" vertical-scroll-proportion="-4.7252126" vertical-offset="2416" max-vertical-offset="9877" />
       </provider>
     </entry>
     <entry file="file://C:/Python27/Lib/site-packages/social/apps/django_app/middleware.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="17" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="935">
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/twitai/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="1" selection-start="328" selection-end="328" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="238">
+        <state line="9" column="1" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="272">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TwitApp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="510">
+        <state line="24" column="0" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="33" selection-start="373" selection-end="373" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="391">
+        <state line="14" column="33" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="391">
           <folding />
         </state>
       </provider>
@@ -661,16 +639,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twitai/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding>
-            <element signature="e#26#71#0" expanded="true" />
-          </folding>
+        <state line="26" column="17" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="731">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TwitApp/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.052227344" vertical-offset="0" max-vertical-offset="3298">
+        <state line="8" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.15668203" vertical-offset="34" max-vertical-offset="3315">
           <folding />
         </state>
       </provider>
