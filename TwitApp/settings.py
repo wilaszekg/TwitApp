@@ -1,6 +1,6 @@
 # Django settings for TwitApp project.
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -172,13 +172,14 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 SOCIAL_AUTH_TWITTER_KEY = '9I8LC9qDRU2L8iwIoZ7g'
 SOCIAL_AUTH_TWITTER_SECRET = '9CwAdc99IOu4eT4eIN2BnjwHscJufZlIjNiX6SiImn8'
 
-SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/tai/login-success'
+SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/tai/main'
 SOCIAL_AUTH_LOGIN_ERROR_URL = '/tai/login-error'
 SOCIAL_AUTH_LOGIN_URL = '/tai/login-error'
+SOCIAL_AUTH_DISCONNECT_REDIRECT_URL = '/tai/login'
+LOGIN_URL = '/tai/login'
 
 #Unused urls
 #LOGIN_ERROR_URL = '/tai/login-error'
-#LOGIN_URL = '/tai/login-error'
 #SOCIAL_AUTH_BACKEND_ERROR_URL = '/tai/login-error'
 #SOCIAL_AUTH_TWITTER_ERROR_URL = '/tai/login-error'
 #SOCIAL_AUTH_TWITTEROAUTH_ERROR_URL = '/tai/login-error'

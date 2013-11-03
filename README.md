@@ -12,4 +12,4 @@ TwitApp
 
 ### Settings
 1. **DATABASES.default.NAME** has to be change to point absoulte sqlite db file in your system. If you want to use another DB, you also have to set other DATABASE settings.
-2. **DEBUG** property in **settings.py** is set to **False** by default. This is because of the way Python Social Auth handles unsuccessful authentication. It is handled by middleware exceptions catching. You cab change **DEBUG** to **True** and it will just raise an error after unsuccessful login.
+2. **DEBUG** property in **settings.py** is set to **True** in development mode. Please note, that it disables catching exceptions by Social Auth app and rendering views after unseccessful log in.
