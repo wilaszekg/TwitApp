@@ -4,8 +4,6 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from django.core.urlresolvers import reverse_lazy
 from django.views.generic.base import RedirectView
-from twitai import views
-import twitai
 
 admin.autodiscover()
 
@@ -24,4 +22,6 @@ urlpatterns = patterns('',
 
     # Social Auth
     url('', include('social.apps.django_app.urls', namespace='social')),
+
+    url(r'^followed/', include('twitfollowing.urls'))
 )

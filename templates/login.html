@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sign in</title>
-</head>
-<body>
-<a href="{% url 'social:begin' "twitter" %}">Twitter OAuth</a><br />
+{%  extends "main.html" %}
+
+
+{%  block navbar %}{% endblock %}
+
+{% block sitename %} Login {% endblock %}
+
+{%  block content %}
+<a href="{% url 'social:begin' "twitter" %}">Login using Twitter</a><br />
+
 {% if message %}
     <h4>{{ message }}</h4>
 {% endif %}
@@ -14,5 +17,4 @@
     Password: {{ form.password }}
     <input type="submit" value="Sign in"/>
 </form>
-</body>
-</html>
+{%  endblock %}

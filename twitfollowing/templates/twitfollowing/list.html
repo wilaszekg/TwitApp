@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+
+
+{% block sitename %}
+    Followed Users
+{% endblock %}
+
+{% block content %}
+
+{% if user.is_active and user.is_staff %}
+<form action="{% url 'followed' %}" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Add followed user" />
+</form>
+{% endif %}
+
+{% if followed_users_list %}
+    <ul>
+    {% for user in followed_users_list %}
+        <li><a href="{% url 'twits' user.twitter_screen_name %}">{{ user.twitter_screen_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No followed users are available.</p>
+{% endif %}
+
+{% endblock %}

@@ -33,6 +33,7 @@ def login_error(request):
     return render(request, 'login.html', {'message' : 'You did not sign in.', 'form' : LoginForm()})
 
 
+@login_required()
 def logout(request):
     auth_logout(request)
     return redirect('twitai:login')

@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+
+{% block sitename %}
+    Twits of user: {{ username }}
+{% endblock %}
+
+
+{% block content %}
+
+{% if twits %}
+    <ul>
+    {% for t in twits %}
+        <li>{{ t.text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No twits are available.</p>
+{% endif %}
+
+{% endblock %}

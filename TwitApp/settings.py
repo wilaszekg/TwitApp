@@ -124,6 +124,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'twitai',
     'social.apps.django_app.default',
+    'twitfollowing'
 )
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
@@ -176,6 +177,7 @@ SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/tai/main'
 SOCIAL_AUTH_LOGIN_ERROR_URL = '/tai/login-error'
 SOCIAL_AUTH_LOGIN_URL = '/tai/login-error'
 SOCIAL_AUTH_DISCONNECT_REDIRECT_URL = '/tai/login'
+
 LOGIN_URL = '/tai/login'
 
 #Unused urls

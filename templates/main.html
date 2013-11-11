@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>{% block title %}Twitter App{% endblock %}</title>
 </head>
 <body>
-    {% include 'navbar.html' with sitename="main" %}
-    <h1>This is page for all authenticated users</h1>
+
+    <p>Welcome, {{ user.username|default:"New User" }} !</p>
+    <div id="navbar">
+        {% block navbar %}
+         {% include 'navbar.html' %}
+        {%  endblock %}
+    </div>
+
+
+    <h1>{% block sitename %}Main{% endblock %}</h1>
+
+
+
+    <div id="content">
+        {% block content %}
+            <h3>This is page for all authenticated users</h3>
+        {% endblock %}
+    </div>
+
 </body>
 </html>
