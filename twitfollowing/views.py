@@ -4,6 +4,7 @@ from django.shortcuts import render
 from TwitApp import settings
 from twitfollowing.models import FollowedUser
 from twython import Twython
+from twython import TwythonAuthError
 from social.apps.django_app.default.models import UserSocialAuth
 from django.forms.models import modelform_factory
 
@@ -24,13 +25,17 @@ def followed_users_list(request):
 
 @login_required()
 def twits_from_user(request, screen_name):
-    tokens = UserSocialAuth.objects.get(user=request.user, provider='twitter').tokens
-    twitter = Twython(settings.SOCIAL_AUTH_TWITTER_KEY,
-                      settings.SOCIAL_AUTH_TWITTER_SECRET,
-                      tokens['oauth_token'],
-                      tokens['oauth_token_secret']
-    )
-    twits = twitter.get_user_timeline(screen_name=screen_name)
+    try:
+        tokens = UserSocialAuth.objects.get(user=request.user, provider='twitter').tokens
+        twitter = Twython(settings.SOCIAL_AUTH_TWITTER_KEY,
+                          settings.SOCIAL_AUTH_TWITTER_SECRET,
+                          tokens['oauth_token'],
+                          tokens['oauth_token_secret']
+        )
+        twits = twitter.get_user_timeline(screen_name=screen_name)
+    except TwythonAuthError:
+        return render(request, 'error.html', {'message': 'This is private twitter profile'})
+
 
     return render(request, 'twitfollowing/twits.html', {'twits': twits, 'username': screen_name} )
 

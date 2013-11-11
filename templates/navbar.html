@@ -1,8 +1,5 @@
 <div>
     <a href="{%  url 'twitai:main' %}">Main</a>
-    {% if user.is_staff %}
-        <a href="{% url 'twitai:staff' %}">Staff</a>
-    {% endif %}
-    <a href="{% url 'followed'%}">Followed</a>
+    <a href="{% url 'twitfollowing:followed'%}">Followed</a>
     <a href="{% url 'twitai:logout'%}">Logout</a>
 </div>

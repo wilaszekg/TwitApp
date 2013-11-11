@@ -7,14 +7,4 @@
 
 {%  block content %}
 <a href="{% url 'social:begin' "twitter" %}">Login using Twitter</a><br />
-
-{% if message %}
-    <h4>{{ message }}</h4>
-{% endif %}
-<form action="{% url 'twitai:login' %}" method="post">
-    {% csrf_token %}
-    Login: {{ form.login }} <br>
-    Password: {{ form.password }}
-    <input type="submit" value="Sign in"/>
-</form>
 {%  endblock %}

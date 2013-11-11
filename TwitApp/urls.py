@@ -23,5 +23,5 @@ urlpatterns = patterns('',
     # Social Auth
     url('', include('social.apps.django_app.urls', namespace='social')),
 
-    url(r'^followed/', include('twitfollowing.urls'))
+    url(r'^followed/', include('twitfollowing.urls', namespace="twitfollowing"))
 )
