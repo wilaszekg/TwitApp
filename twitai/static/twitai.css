@@ -1,0 +1,19 @@
+body {
+    background-color: #b9def0;
+}
+
+div.tai-main {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 30px 100px;
+    padding: 30px;
+}
+
+div.panel.panel-default {
+
+}
+
+div.tai-inner {
+    margin: 20px 100px;
+}

@@ -9,9 +9,9 @@
 {% block content %}
 
 {% if twits %}
-    <ul>
+    <ul class="list-group">
     {% for t in twits %}
-        <li>{{ t.text }}</li>
+        <li class="list-group-item">{{ t.text }}</li>
     {% endfor %}
     </ul>
 {% else %}
