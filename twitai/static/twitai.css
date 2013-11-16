@@ -10,10 +10,35 @@ div.tai-main {
     padding: 30px;
 }
 
-div.panel.panel-default {
-
-}
-
 div.tai-inner {
     margin: 20px 100px;
+}
+
+input[type="text"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    outline: medium none;
+    border-radius: 3px;
+    font-size: 16px;
+    height: auto;
+    padding: 7px 9px;
+    width: 300px;
+}
+
+label {
+    display: block;
+}
+
+p.twit-name {
+    text-align: left;
+    font-style: italic;
+}
+
+p.twit-screen-name {
+    float: right;
+    font-weight: bold;
+}
+
+p.twit-description {
+    font-size: 10px;
 }
