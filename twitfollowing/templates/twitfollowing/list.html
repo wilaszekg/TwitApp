@@ -2,13 +2,13 @@
 {% load staticfiles %}
 
 {% block sitename %}
-    Followed Users
+    {{ type }} Users
 {% endblock %}
 
 {% block content %}
 {% if user.is_active and user.is_staff %}
     <div class="panel panel-default">
-        <div class="panel-heading">Add followed user</div>
+        <div class="panel-heading">Add {{ type }} user</div>
         <div class="panel-body">
             <form action="{% url 'twitfollowing:followed' %}" method="post">{% csrf_token %}
                 {{ form.as_p }}
@@ -20,14 +20,14 @@
 {% if followed_users_list %}
     <ul class="list-group">
     <a class="list-group-item active">
-        All followed users:
+        All  {{ type }} users:
     </a>
     {% for user in followed_users_list %}
         <a class="list-group-item" href="{% url 'twitfollowing:twits' user.twitter_screen_name %}">{{ user.twitter_screen_name }}</a>
     {% endfor %}
     </ul>
 {% else %}
-    <p>No followed users are available.</p>
+    <p>No  {{ type }} users are available.</p>
 {% endif %}
 {% endblock %}
 
