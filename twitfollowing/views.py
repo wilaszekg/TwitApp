@@ -4,7 +4,6 @@ from django.http.response import HttpResponse
 
 from django.shortcuts import render
 from TwitApp import settings
-from twitfollowing.exceptions import TwitFollowingException
 from twitfollowing.models import FollowedUser
 from twython import Twython
 from twython import TwythonAuthError
@@ -30,31 +29,26 @@ class RecommendedUsersStrategy:
     def __init__(self):
         pass
 
-    @staticmethod
-    def save(request, form):
+    def save(self, request, form):
         form.save()
 
-    @staticmethod
-    def all_users(request):
+    def all_users(self, request):
         return FollowedUser.objects.all()
 
 
 class FollowedUsersStrategy:
     type = "followed"
 
-    def __init__(self):
-        pass
+    def __init__(self, twitter_factory):
+        self.twitter_factory = twitter_factory
 
-    @staticmethod
-    def save(request, form):
-        twitter = get_twython(request)
+    def save(self, request, form):
+        twitter = self.twitter_factory(request)
         twitter.create_friendship(screen_name=form.instance.twitter_screen_name)
 
-    @staticmethod
-    def all_users(request):
-        twitter = get_twython(request)
+    def all_users(self, request):
+        twitter = self.twitter_factory(request)
         response = twitter.get_friends_ids(screen_name=request.user.username)
-        names = []
         ids = [str(id) for id in response["ids"]]
         users = twitter.lookup_user(user_id=", ".join(ids))
         names = [{"twitter_screen_name": u["screen_name"]} for u in users]
@@ -77,8 +71,8 @@ def users_list_factory(serving_strategy):
     return view
 
 
-recommended_users_list = users_list_factory(RecommendedUsersStrategy)
-followed_users_list = users_list_factory(FollowedUsersStrategy)
+recommended_users_list = users_list_factory(RecommendedUsersStrategy())
+followed_users_list = users_list_factory(FollowedUsersStrategy(get_twython))
 
 
 @login_required()

@@ -10,7 +10,10 @@
     <div class="panel panel-default">
         <div class="panel-heading">Add {{ type }} user</div>
         <div class="panel-body">
-            <form action="{% url 'twitfollowing:followed' %}" method="post">{% csrf_token %}
+
+            {% with fullurl='twitfollowing:'|add:type %}
+            <form action="{% url fullurl %}" method="post">{% csrf_token %}
+            {% endwith %}
                 {{ form.as_p }}
                 <input class="btn btn-info" type="submit" value="Add!"/>
             </form>
